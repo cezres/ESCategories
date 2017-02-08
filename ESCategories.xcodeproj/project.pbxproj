@@ -81,6 +81,8 @@
 		6E345EC31E2F4F5800CCD14F /* UIView+Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E345E801E2F4F5800CCD14F /* UIView+Capture.m */; };
 		6E345EC41E2F4F5800CCD14F /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E345E811E2F4F5800CCD14F /* UIView+Frame.h */; };
 		6E345EC51E2F4F5800CCD14F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E345E821E2F4F5800CCD14F /* UIView+Frame.m */; };
+		6E8CB6DC1E49D2D8004B4790 /* ESNavigationBarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E8CB6DA1E49D2D8004B4790 /* ESNavigationBarButton.h */; };
+		6E8CB6DD1E49D2D8004B4790 /* ESNavigationBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8CB6DB1E49D2D8004B4790 /* ESNavigationBarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +166,9 @@
 		6E345E801E2F4F5800CCD14F /* UIView+Capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Capture.m"; sourceTree = "<group>"; };
 		6E345E811E2F4F5800CCD14F /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		6E345E821E2F4F5800CCD14F /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		6E8CB6D91E49D1A5004B4790 /* ESCategories.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ESCategories.podspec; sourceTree = "<group>"; };
+		6E8CB6DA1E49D2D8004B4790 /* ESNavigationBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESNavigationBarButton.h; sourceTree = "<group>"; };
+		6E8CB6DB1E49D2D8004B4790 /* ESNavigationBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESNavigationBarButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +192,7 @@
 		6E345DFD1E2F4EFC00CCD14F = {
 			isa = PBXGroup;
 			children = (
+				6E8CB6D91E49D1A5004B4790 /* ESCategories.podspec */,
 				6E345E091E2F4EFC00CCD14F /* ESCategories */,
 				6E345E171E2F4F1C00CCD14F /* ESCategoriesExample */,
 				6E345E081E2F4EFC00CCD14F /* Products */,
@@ -412,6 +418,8 @@
 			children = (
 				6E345E731E2F4F5800CCD14F /* UINavigationItem+Extension.h */,
 				6E345E741E2F4F5800CCD14F /* UINavigationItem+Extension.m */,
+				6E8CB6DA1E49D2D8004B4790 /* ESNavigationBarButton.h */,
+				6E8CB6DB1E49D2D8004B4790 /* ESNavigationBarButton.m */,
 			);
 			path = UINavigationItem;
 			sourceTree = "<group>";
@@ -473,6 +481,7 @@
 				6E345EA91E2F4F5800CCD14F /* UIColor+HexColor.h in Headers */,
 				6E345EAF1E2F4F5800CCD14F /* UIImage+Color.h in Headers */,
 				6E345EB51E2F4F5800CCD14F /* UIKit_Categories.h in Headers */,
+				6E8CB6DC1E49D2D8004B4790 /* ESNavigationBarButton.h in Headers */,
 				6E345E901E2F4F5800CCD14F /* NSString+RMB.h in Headers */,
 				6E345EC41E2F4F5800CCD14F /* UIView+Frame.h in Headers */,
 				6E345EA71E2F4F5800CCD14F /* UIButton+LayoutSubviews.h in Headers */,
@@ -611,6 +620,7 @@
 				6E345E891E2F4F5800CCD14F /* NSString+base64.m in Sources */,
 				6E345EBF1E2F4F5800CCD14F /* UITextField+image.m in Sources */,
 				6E345EB71E2F4F5800CCD14F /* UILabel+Size.m in Sources */,
+				6E8CB6DD1E49D2D8004B4790 /* ESNavigationBarButton.m in Sources */,
 				6E345E8D1E2F4F5800CCD14F /* NSString+HTML.m in Sources */,
 				6E345EA41E2F4F5800CCD14F /* UIButton+BadgeValue.m in Sources */,
 				6E345EA61E2F4F5800CCD14F /* UIButton+Block.m in Sources */,
@@ -847,6 +857,7 @@
 				6E345E111E2F4EFC00CCD14F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E345E2A1E2F4F1C00CCD14F /* Build configuration list for PBXNativeTarget "ESCategoriesExample" */ = {
 			isa = XCConfigurationList;
@@ -855,6 +866,7 @@
 				6E345E2C1E2F4F1C00CCD14F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,8 @@
 
 #import "UIButton+BadgeValue.h"
 #import <objc/runtime.h>
-#import "Macros.h"
+#import "Macros_Color.h"
+#import "Macros_Font.h"
 #import "Foundation_Categories.h"
 
 @implementation UIButton (BadgeValue)

@@ -34,11 +34,11 @@
     CGFloat x = ceilf(percentX * tabFrame.size.width);
     CGFloat y = ceilf(0.1 * tabFrame.size.height);
     if (carCount > 0 && carCount < 10) {
-        badgeView.text = [NSString stringWithFormat:@"%ld",carCount];
+        badgeView.text = [NSString stringWithFormat:@"%ld", (long)carCount];
         badgeView.frame= CGRectMake(x, y,14,14);
     }
     else if (carCount>=10) {
-        badgeView.text = [NSString stringWithFormat:@"%ld",carCount];
+        badgeView.text = [NSString stringWithFormat:@"%ld", (long)carCount];
         badgeView.frame= CGRectMake(x, y,20,14);
     }
     else if (carCount>99) {

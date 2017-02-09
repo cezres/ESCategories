@@ -19,7 +19,7 @@
         timeString=@"刚刚";
     }
     else if (iHours < 1 && iMinutes >= 10 && iDays == 0) {
-        timeString = [NSString stringWithFormat:@"%ld分前",iMinutes];
+        timeString = [NSString stringWithFormat:@"%ld分前", (long)iMinutes];
     }
     else {
         if (self.length >=16) {
@@ -71,13 +71,13 @@
         timeString=@"刚刚";
     }
     else if (iHours < 1 && iMinutes >= 10 && iDays == 0) {
-        timeString=[NSString stringWithFormat:@"%ld分前",iMinutes];
+        timeString=[NSString stringWithFormat:@"%ld分前", (long)iMinutes];
     }
     else if (iHours > 1 && iDays < 1) {
-        timeString=[NSString stringWithFormat:@"%ld小时之前",iHours];
+        timeString=[NSString stringWithFormat:@"%ld小时之前", (long)iHours];
     }
     else if (iDays == 1&&iDays<2) {
-        timeString = [NSString stringWithFormat:@"%ld天之前",iDays];
+        timeString = [NSString stringWithFormat:@"%ld天之前", (long)iDays];
     }else if (iDays >= 2) {
         
         timeString = [self substringWithRange:NSMakeRange(5,5)];
@@ -119,7 +119,7 @@
         else {
             if([hours integerValue] >12) {
                 NSInteger a = [hours integerValue] - 12;
-                timeString = [NSString stringWithFormat:@"今天 下午%ld%@",a,minutes];
+                timeString = [NSString stringWithFormat:@"今天 下午%ld%@", (long)a,minutes];
             }
             else if ([hours integerValue] == 12) {
                 timeString = [NSString stringWithFormat:@"今天 下午%@%@",hours,minutes];
@@ -132,7 +132,7 @@
     else if ([monthString isEqualToString:endMonthString] && [todayString integerValue]-[enddayString integerValue] == 1) {
         if([hours integerValue] >12) {
             NSInteger a = [hours integerValue] - 12;
-            timeString = [NSString stringWithFormat:@"昨天 下午%ld%@",a,minutes];
+            timeString = [NSString stringWithFormat:@"昨天 下午%ld%@", (long)a,minutes];
         }
         else if ([hours integerValue] == 12) {
             timeString = [NSString stringWithFormat:@"昨天 下午%@%@",hours,minutes];
@@ -144,12 +144,12 @@
     }
     else {
         NSString *MString = [self substringWithRange:NSMakeRange(5,2)];
-        NSString *mstring = [NSString stringWithFormat:@"%ld月",[MString integerValue]];
+        NSString *mstring = [NSString stringWithFormat:@"%ld月", (long)[MString integerValue]];
         NSString *DString = [self substringWithRange:NSMakeRange(8,2)];
-        NSString *dstring = [NSString stringWithFormat:@"%ld日",[DString integerValue]];
+        NSString *dstring = [NSString stringWithFormat:@"%ld日", (long)[DString integerValue]];
         if([hours integerValue] >12) {
             NSInteger a = [hours integerValue] - 12;
-            timeString = [NSString stringWithFormat:@"%@%@ 下午%ld%@",mstring,dstring,a,minutes];
+            timeString = [NSString stringWithFormat:@"%@%@ 下午%ld%@",mstring,dstring, (long)a,minutes];
         }
         else if ([hours integerValue] == 12) {
             timeString = [NSString stringWithFormat:@"%@%@ 上午%@%@",mstring,dstring,hours,minutes];

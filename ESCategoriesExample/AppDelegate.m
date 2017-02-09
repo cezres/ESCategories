@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     
     
-    [self application:NULL didFinishLaunchingWithOptions:NULL];
+//    [self application:NULL didFinishLaunchingWithOptions:NULL];
     
     return YES;
 }

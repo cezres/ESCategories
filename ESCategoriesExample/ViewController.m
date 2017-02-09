@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ESCategories.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"XXXX";
+    
+    ESNavigationBarButton *closeButton = [ESNavigationBarButton buttonWithTitle:@"关闭"];
+    self.navigationItem.leftBarButtons = @[closeButton];
+    
 }
 
 
